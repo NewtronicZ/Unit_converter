@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Metric to Feet Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="converter-container">
+        <h2>📏 เครื่องแปลงหน่วยความยาว (Metric → Feet)</h2>
+
+        <label for="inputValue">ป้อนค่า:</label>
+        <input type="number" id="inputValue" value="1" min="0" step="any">
+
+        <label for="fromUnit">จากหน่วย:</label>
+        <select id="fromUnit">
+            <option value="mm">มิลลิเมตร (mm)</option>
+            <option value="cm">เซนติเมตร (cm)</option>
+            <option value="m" selected>เมตร (m)</option>
+        </select>
+        
+        <button onclick="convertLength()">คำนวณ</button>
+
+        <div class="result-box">
+            <p>ผลลัพธ์ในหน่วยฟุต (Feet):</p>
+            <span id="resultDisplay">3.28084 ft</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
